@@ -1,4 +1,4 @@
-%% instantiate the library
+% instantiate the library
 disp('Loading the library...');
 lib = lsl_loadlib();
 
@@ -12,12 +12,14 @@ while isempty(result)
 disp('Opening an inlet...');
 inlet = lsl_inlet(result{1});
 
-disp('Now receiving data...');
+disp('Now receiving chunked data...');
 while true
-    % get data from the inlet
-    [vec,ts] = inlet.pull_sample();
-    % and display it
-    disp('hi');
-    fprintf('%.2f\t',vec);
-    fprintf('%.5f\n',ts);
+    % get chunk from the inlet
+    [chunk,stamps] = inlet.pull_chunk();
+    for s=1:length(stamps)
+        % and display it
+        fprintf('%.2f\t',chunk(:,s));
+        fprintf('%.5f\n',stamps(s));
+    end
+    pause(0.05);
 end
