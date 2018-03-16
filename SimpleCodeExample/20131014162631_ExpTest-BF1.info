@@ -1,0 +1,66 @@
+StartDate (first EEG timestamp): 1381760791546
+Device class: StarStim
+Device Mac: 00:07:80:63:F7:68
+NIC version: v1.2.1
+Firmware version: 922
+Line filter status: OFF
+Additional channel status:OFF
+
+Total number of channels: 8
+Number of EEG channels: 0
+Number of records of EEG: 20062
+Number of packets lost: 0(0.00%)
+EEG sampling rate: 500 Samples/second
+EEG units: nV
+
+Number of stimulation channels: 1
+Number of records of Stimulation: 0 (1 second/record)
+Stimulation sampling rate: 1000 Samples/second
+Stimulation units: uA
+Ramp up duration (s): 5
+Ramp down duration (s): 5
+Sham ramp duration (s): OFF
+Stimulation duration (s): 30
+Type of stimulation: tDCS
+Stimulation parameters:
+	Channel 1: 
+		Position: Ch1
+		Type: Stimulation Anodal
+		Amplitude (uA): 100
+	Channel 2: 
+		Position: Ch2
+		Type: Return
+		Percentage return: 100%
+	Channel 3: 
+		Position: Ch3
+		Type: Not used
+	Channel 4: 
+		Position: Ch4
+		Type: Not used
+	Channel 5: 
+		Position: Ch5
+		Type: Not used
+	Channel 6: 
+		Position: Ch6
+		Type: Not used
+	Channel 7: 
+		Position: Ch7
+		Type: Not used
+	Channel 8: 
+		Position: Ch8
+		Type: Not used
+
+Trigger information:
+	Code	Description
+	1	Subject moved
+	2	Eyes opened
+	3	Eyes closed
+	4	sleeping
+	5	EEG signals are noisy
+	6	TMS fired
+	7	fall
+	8	
+	9	
+
+User notes:
+This is a test file for demo purposes. tDCS was on.
